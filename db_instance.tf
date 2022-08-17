@@ -11,4 +11,7 @@ resource "aws_db_instance" "db_instance" {
   vpc_security_group_ids   = [data.aws_security_group.tcw_sg.id]
   instance_class           = var.instance_class
   allocated_storage        = 20
+  
+  
+  
 }
