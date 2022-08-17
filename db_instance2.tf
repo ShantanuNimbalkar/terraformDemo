@@ -1,4 +1,4 @@
-resource "aws_db_instance" "db_instance" {
+resource "aws_db_instance" "db_instance2" {
   engine                   = var.engine_name
   name                     = var.db_name
   username                 = var.user_name
@@ -11,7 +11,4 @@ resource "aws_db_instance" "db_instance" {
   vpc_security_group_ids   = [data.aws_security_group.tcw_sg.id]
   instance_class           = var.instance_class
   allocated_storage        = 20
-  
-  
-  
 }
